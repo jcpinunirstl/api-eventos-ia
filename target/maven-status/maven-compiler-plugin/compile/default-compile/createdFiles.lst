@@ -1,0 +1,4 @@
+com\example\eventapi\EventApiApplication.class
+com\example\eventapi\controller\EventController.class
+com\example\eventapi\repository\EventRepository.class
+com\example\eventapi\model\Event.class

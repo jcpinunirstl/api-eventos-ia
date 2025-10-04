@@ -5,34 +5,17 @@ This project is a Spring Boot application that connects to an H2 in-memory datab
 ## Features
 
 - In-memory H2 database for quick setup and testing.
-- RESTful API for creating, retrieving, and managing events.
+- RESTful API for creating, retrieving, and listing events.
 - H2 console enabled for easy database management.
 
-## Project Structure
-
-```
-springboot-event-api
-├── src
-│   ├── main
-│   │   ├── java
-│   │   │   └── com
-│   │   │       └── example
-│   │   │           └── eventapi
-│   │   │               ├── EventApiApplication.java
-│   │   │               ├── controller
-│   │   │               │   └── EventController.java
-│   │   │               ├── model
-│   │   │               │   └── Event.java
-│   │   │               └── repository
-│   │   │                   └── EventRepository.java
-│   │   └── resources
-│   │       ├── application.properties
-│   │       └── README.md
-├── pom.xml
-└── README.md
-```
-
 ## Getting Started
+
+### Prerequisites
+
+- Java 11 or higher
+- Maven
+
+### Running the Application
 
 1. Clone the repository:
    ```
@@ -58,13 +41,12 @@ springboot-event-api
    ```
    http://localhost:8080/h2-console
    ```
-
    Use the following credentials:
    - JDBC URL: `jdbc:h2:mem:testdb`
    - User Name: `sa`
    - Password: `password`
 
-## API Endpoints
+### API Endpoints
 
 - `POST /events` - Create a new event
 - `GET /events/{id}` - Retrieve an event by ID
